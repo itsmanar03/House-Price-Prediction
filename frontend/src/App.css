@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+div {
+  text-align: center;
+}
+
+h1 {
+  color: #2563eb;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-size: 48px;
+}
+
+p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.prediction-form {
+  width: 700px;
+  max-width: 90%;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.prediction-form input,
+.prediction-form select {
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  background: white;
+  box-sizing: border-box;
+}
+
+.prediction-form input:focus,
+.prediction-form select:focus {
+  border-color: #2563eb;
+}
+
+.prediction-form button {
+  grid-column: span 2;
+
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.prediction-form button:hover {
+  background: #1d4ed8;
+}
+
+.prediction-form h2 {
+  grid-column: span 2;
+  color: #16a34a;
+  margin-top: 15px;
+}
+
+.prediction-form p {
+  grid-column: span 2;
+  color: #2563eb;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-text-fill-color: #1f2937 !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.prediction-form input,
+.prediction-form select {
+  color: #111827;
+}
+
+.prediction-form input::placeholder {
+  color: #9ca3af;
+}
